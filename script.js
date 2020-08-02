@@ -1,4 +1,4 @@
-
+//add comments
 function getPlus(){
   let number1 = document.querySelector('#result').textContent;
   document.querySelector('#number1').textContent = number1;
