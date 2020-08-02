@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculator</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Julius+Sans+One">
+</head>
+
+<body>
+  <h1>Calculator</h1>
+  <script src="script.js"></script>
+
+  <div id="container1">
+    <form id="form">
+      <div id="result"></div>
+    </form>
+  </div>
+
+  <div id="container2" class="keypad">
+    <div id="seven"><button class="seven" onclick="seven()">7</button></div>
+    <div id="eight"><button class="eight" onclick="eight()">8</button></div>
+    <div id="nine"><button class="nine" onclick="nine()">9</button></div>
+    <div id="divide"><button class="divide" onclick="getDivide()">/</button></div>
+  </div>
+
+  <div id="container3" class="keypad">
+    <div id="four"><button class="four" onclick="four()">4</button></div>
+    <div id="five"><button class="five" onclick="five()">5</button></div>
+    <div id="six"><button class="six" onclick="six()">6</button></div>
+    <div id="multiply"><button class="multiply" onclick="getMult()">*</button></div>
+  </div>
+
+  <div id="container4" class="keypad">
+    <div id="one"><button class="one" onclick="one()">1</button></div>
+    <div id="two"><button class="two" onclick="two()">2</button></div>
+    <div id="three"><button class="three" onclick="three()">3</button></div>
+    <div id="minus"><button class="minus" onclick="getMinus()">-</button></div>
+  </div>
+
+  <div id="container5" class="keypad">
+    <div id="zero"><button class="zero" onclick="zero()">0</button></div>
+    <div id="decimal"><button class="decimal" onclick="decimal()">.</button></div>
+    <div id="plus"><button class="plus" onclick="getPlus();">+</button></div>
+  </div>
+
+  <div id="container6" class="keypad">
+    <div id="clear"><button class="clear" onclick="reset()">Clear</button></div>
+    <div id="equal"><button class="equal" onclick="operate()">=</button></div>
+  </div>
+
+  <div id='number1'></div>
+  <div id='operator'></div>
+
+</body>
+
+
+</html>
