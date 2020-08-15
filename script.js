@@ -57,6 +57,9 @@ function nine() {
 function zero() {
   document.querySelector('#result').innerHTML += 0;
 }
+function decimal() {
+  document.querySelector('#result').innerHTML += '.';
+}
 
 function operate() {
   let num1 = document.querySelector('#number1').textContent;
@@ -78,11 +81,11 @@ function operate() {
 }
 
 function reset() {
-  document.getElementById('result').textContent = '';
-  document.getElementById('operator').textContent = '';
-  document.getElementById('number1').textContent = '';
+  document.getElementById('result').textContent = ' ';
+  document.getElementById('operator').textContent = ' ';
+  document.getElementById('number1').textContent = ' ';
 }
 
 function clearScreen() {
-  document.getElementById('result').textContent = '';
+  document.getElementById('result').innerHTML = ' ';
 }
